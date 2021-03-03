@@ -6,3 +6,4 @@ let idade = prompt("qual a sua idade?")
     } else {
         console.log(`Sua idade não é permitida, Lamentamos ${nome}!`)
     }
+    
