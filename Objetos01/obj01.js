@@ -15,7 +15,8 @@ let cachorro = {
     }
 };
 
-
+// [] - array
+// {} - obj
 
 console.log(cachorro.patas + " patas" + " o nome dele " + cachorro.nome)
 cachorro.latir();
