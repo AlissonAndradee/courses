@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finally</title>
+    <!--
+        FINALLY
+        - Finally é executada independente do resultado do try/catch;
+        - E pode existir com try e catch ou apenas com try;
+        -- EXEMPLO --
+    -->
+    <script>
+
+        try{
+            let c = a + b;
+        } catch(error) {
+            console.log("Algo deu errado: " + error);
+        } finally {
+            console.log("Executou!")
+         }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

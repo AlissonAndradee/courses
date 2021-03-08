@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificando Padrões</title>
+</head>
+<body>
+    <!--
+        Verificando padrões com regex?
+         - Depois da definição do padrão 
+           por meio da regex;
+         - Utilizamos o método teste()para verificar
+           se o padrão é retornado;
+         - Com isso vamos receber de resposta 
+           true or false, veja:
+
+        -- EXEMPLO --
+        
+        console.log(/testando/.test("ttttttttestandoooo"));
+        console.log(/testando/.test("yyyortesthgagdia"));
+        
+
+    -->
+    <script>
+        // Exemplo Pratico 1
+        const reg1 = new RegExp('bola');
+
+        console.log(reg1.test("Tem bola?"));
+        console.log(reg1.test("não tem!"));
+        
+        // Exemplo Pratico 2
+        const reg2 = /bola/;
+
+        console.log(reg2.test("Tem Bola?"));
+        console.log(reg2.test("Não tem!"));
+
+        // Exemplo Pratico 3
+        let text = 'Tem bola na cesta'
+        let reg3 = /bola/
+
+        console.log(reg3.test(text));
+
+        // Exemplo Pratico 4
+        console.log(/quadrado/.test("Onde tem um quadrado?"));
+        
+    </script>
+</body>
+</html>

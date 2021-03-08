@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tratamento de input por função</title>
+</head>
+<body>
+    <!--
+        TRATAMENTO DE INPUT POR FUNÇÃO
+        - Não podemos controlar os dados que o 
+        usuário enviar, então para o bem funcionamento
+        do software, devemos tratar eles;
+        - Veja um exemplo de tratamento de number
+    -->
+    <script>
+        function checarNumero(valor) {
+            let resultado = Number(valor);
+            if (Number.isNaN(resultado)){
+                return null;
+            } else{
+                return resultado;
+            }
+        }
+
+        console.log(checarNumero(5));
+        console.log(checarNumero('teste'));
+
+    </script>
+</body>
+</html>

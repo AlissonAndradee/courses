@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificando Padrões</title>
+</head>
+<body>
+    <!--
+        Caracteres Especiais
+         
+        \d - Qualquer dígito de caractere
+        \w - Um caractere alfanumérico("teste")
+        \s - Qualquer Caractere de espaço em branco
+        \D - Caracteres que não são digitos
+        \W - Caractere não-alfanumérico
+        \S - Caractere que não seja espaço em branco
+        . -  Qualquer caractere, menos nova linha 
+
+    -->
+    <script>
+            const dia = /\d\d/;
+
+            console.log(dia.test("2019") && "2019".length == 2);
+            console.log(dia.test("asd"));
+            console.log(dia.test("05") && "05".length == 2);
+            console.log(dia.test("asd1"));
+
+            const palavrasPeloMenosTresLetras = /\w\w\w/;
+
+            console.log(palavrasPeloMenosTresLetras.test("asd"));
+            console.log(palavrasPeloMenosTresLetras.test("asdd"));
+            console.log(palavrasPeloMenosTresLetras.test("as"));
+    </script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> -- Assertions --</title>
+    <!--
+    - Veificações no programa, que são utilizadas
+    para assegurar que tudo ocorra da forma esperada;
+    AULA 221
+    -->
+</head>
+<body>
+    <script>
+        
+        let arr = [1,2,3,4,5];
+        let arr2 = [];
+
+        function interarArray(arr) {
+            if(arr.lenght == 0) {
+                throw new Error("O array precisa ter Elementos");
+            } else {
+                for(let i = 0; i < arr.lenght; i++) {
+                    console.log(i);
+                }
+            }
+        }
+        function arrayVazio(arr) {
+            if(arr.lenght > 0) {
+                throw Error("o array não pode ter elementos");
+            } else {
+                console.log("Agora deu certo");
+            }
+        }
+
+        interarArray(arr);
+        interarArray(arr2);
+    </script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operador NOT</title>
+</head>
+<body>
+    <!--
+        Operador not ^
+        
+        - Podemos escrever um set que aceitam tudo,
+          menos alguns caracteres com o not;
+        - Lembrando que combinações serão aceitas, 
+          o negado é apenas se bate com o set;
+        - Mais adiante aprenderemos negar de outras formas;
+    -->
+    <script>
+            let notAeB = /[^ab]/; // só as letras a e b isoladas frases ele nao reconhece
+
+            console.log(notAeB.test("b"));
+            console.log(notAeB.test("Aqui tem um a"));
+            console.log(notAeB.test("a"));
+
+            
+            const nottoaz = /[^a-z]/;// a to z palavras de a ate z isoladas de numeros
+
+            console.log(nottoaz.test("123 as"));
+            console.log(nottoaz.test("asdasfdfsfeeqweqeqwes"));
+
+            const az = /[a-z]/;
+
+            console.log(nottoaz.test("asd123asdad"));
+            
+    </script>
+</body>
+</html>

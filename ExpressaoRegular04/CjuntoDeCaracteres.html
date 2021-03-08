@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificando Padrões</title>
+</head>
+<body>
+    <!--
+        Conjunto de caracteres
+         - Podemos definir um conjunto de caracteres 
+           para encontrar por regex;
+         - Basta por entre [];
+         - Com um traço podemos definir um intervalo
+           também, veja: 
+          
+        -- EXEMPLO --
+        
+        console.log(/[123]/.test("tttttttte123standoooo"));
+        console.log(/[0-9]/.test("yyyortesthgagdia"));
+        
+
+    -->
+    <script>
+        // Exemplo Pratico 1
+        const reg1 = /[12345]/
+
+        console.log(reg1.test("Temos o número 6"));
+        console.log(reg1.test("Temos o número 2"));  
+    </script>
+</body>
+</html>

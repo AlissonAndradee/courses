@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tratamento de input por função</title>
+</head>
+<body>
+    <!--
+        EXCEPTIONS 
+        - Podemos criar erros no programa,
+        caso alguma condição não seja atendida
+        - Porém as exceptions abordam o programa,
+        só geram o erro;
+
+        -- EXEMPLO --
+    -->
+    <script>
+        // let a = 1;
+
+        // if(a != 2){
+        //     throw new Error("O valor de a não pode ser 1")
+        // }
+
+        // -- EXEMPLO --
+
+        function saudacao(nome) {
+            if (typeof nome != 'string') {
+                throw new Error ("o parametro nome precisa ser uma string");
+            } else {
+                console.log(`Olá, ${nome}!`);
+            }
+        }
+
+        saudacao("Alisson")
+        saudacao(5);
+
+        console.log("teste");
+    </script>
+</body>
+</html>

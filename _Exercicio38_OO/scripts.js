@@ -11,7 +11,33 @@ class enderecoCliente {
         this.cidade = cidade;
         this.estado = estado;
     }
+    set novaRua(novaRua) {
+        this.rua = novaRua;
+
+    }
+
+    set novoBairro(novoBairro) {
+        this.bairro = novoBairro;
+    }
+    set novaCidade(novaCidade) {
+        this.cidade = novaCidade;
+    }
+    set novoEstado(novoEstado) {
+        this.estado = novoEstado;
+    }
 }
 
 let cliente = new enderecoCliente('Rua vitorio sisti','jardim tokio','Londrina','Parana');
+console.log(cliente)
+
+cliente.novaRua = "Rua dos Pardais";
+console.log(cliente)
+
+cliente.novoBairro = 'Jardim Maracanã'
+console.log(cliente)
+
+cliente.novaCidade = 'Cambé'
+console.log(cliente)
+
+cliente.novoEstado = "São Paulo"
 console.log(cliente)
