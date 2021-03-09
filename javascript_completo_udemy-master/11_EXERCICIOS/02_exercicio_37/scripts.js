@@ -9,7 +9,7 @@ class Carrinho {
 
     let contador = 0;
 
-    for(let itemCarrinho in this.itens) {
+    for(let itemCarrinho in this.itens) {      
       if(this.itens[itemCarrinho].id == item.id) {
         this.itens[itemCarrinho].qtd += item.qtd;
         contador = 1;

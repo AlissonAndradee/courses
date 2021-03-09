@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validando Dominio</title>
+</head>
+<body>
+    <!--
+        Na prática: Validando Dominio
+        AULA 236
+        - Da seguinte forma, podemos validar um domínio:
+    -->
+    <script>
+        let validarDominio = /www.\w+\.com|com.br/;
+
+        console.log(validarDominio.test("www.google.com"));
+        console.log(validarDominio.test("www.test"));
+        console.log(validarDominio.test("teste.com"));
+        console.log(validarDominio.test("www.horadeacordar.com.br"));
+        
+    </script>
+</body>
+</html>

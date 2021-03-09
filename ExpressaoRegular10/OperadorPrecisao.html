@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operador Precisao</title>
+</head>
+<body>
+    <!--
+        Operador Precisao
+        AULA 232
+        - Inserir o número de ocorrência
+        ante {};
+    -->
+    <script>
+        let telefone = /\d{4,5}-\d{4}/; // ocorrencia precisa
+
+        console.log(telefone.test("4004-5050"));
+        console.log(telefone.test("99999-8080"));
+        console.log(telefone.test("555-666"));
+        console.log(telefone.test("9999-9"));
+    </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choice_Pattern</title>
+</head>
+<body>
+    <!--
+        Choice_Pattern
+        AULA 235
+        - Podemos colocar uma instrução na regex que funciona
+        como um || (or) das condicionais
+    -->
+    <script>
+        let frutas = /\d+ (bananas|maças|laranjas)/;
+
+        console.log(frutas.test("10 bananas"));
+        console.log(frutas.test("25 batatas"));
+        console.log(frutas.test("8 laranjas"));
+        
+    </script>
+</body>
+</html>

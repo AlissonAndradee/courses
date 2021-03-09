@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validando Email</title>
+</head>
+<body>
+    <!--
+        Na prática: Validando Email
+        AULA 237
+        - Da seguinte forma, podemos validar um e-mail:
+    -->
+    <script>
+        let validarEmail = /\w+@\w+\.w+/
+
+        console.log(validarEmail.test("teste@email.com"));
+        console.log(validarEmail.test("email@email"));
+        console.log(validarEmail.test("ronaldo@yahoo.com.br"));
+        console.log(validarEmail.test("email.com"));
+        
+    </script>
+</body>
+</html>
