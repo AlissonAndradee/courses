@@ -1,0 +1,5 @@
+INSTALANDO POSTMAN
+- Postman é o software mais utilizado para testar APIs;
+- quando ainda não é um interface gráfica, podemos testar por meio
+dele as rotas de nossa API;
+https://www.postman.com/downloads/

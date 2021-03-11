@@ -1,0 +1,7 @@
+O QUE É UMA API?
+- Application Programming Interface
+- Uma maneira de se comunicar via HTTP a um servidor e fazer
+operações como: visualizar, deletar, criar e atualizar dados;
+- Grandes aplicações como Facebook e Instagram utilizam APIs;
+- Grande parte dos softwares desenvolvidos em Node.js tem uma API;
+- E utilizam um framework chamado Express para isso;

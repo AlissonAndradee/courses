@@ -1,0 +1,8 @@
+O QUE SÃO ROTAS?
+- Nos sites e nas APIs temos o que chamamos de rotas;
+- Que é basicamente a URL que queremos acessar;
+- Porém quando tratamos de uma API chamamos as URLs de rota;
+- NO Express vamos criar as nossas rotas para serem acesssadas via 
+HTTP e responderem baseadas numa lógica que inserirmos;
+- E cada rota vai receber um método HTTP, que deve coincidir 
+com o proposto pelo REST, Conforme vimos anteriormente;
